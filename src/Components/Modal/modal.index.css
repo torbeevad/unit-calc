@@ -1,0 +1,34 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transform: scale(0);
+    background-color: #f9f9f9 ;
+    z-index: 1000;
+}
+
+.modal__content {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    transform: scale(1);
+}
+
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+
